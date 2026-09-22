@@ -5,7 +5,7 @@ El proyecto fue desarrollado utilizando HTML, CSS y JavaScript e incorpora un al
 
 El algoritmo funciona de la siguiente forma:
 
-Primero nos pide los conceptos junto con las pistas y posteriormente se limpia el texto antes de mostrarlo en la página de manera que si el usuario escribe caracteres que HTML pueda interpretar como código se muestren solamente como texto.
+Primero, solicita los conceptos junto con las pistas y posteriormente se limpia el texto antes de mostrarlo en la página de manera que si el usuario escribe caracteres que HTML pueda interpretar como código se muestren solamente como texto.
 
 Ya que se ingresaron los conceptos, se ordenan los conceptos de mayor a menor números de letras y así agregarlo al centro del crucigrama y comparar las letras de todos los conceptos para encontrar similitudes para ordenarlos de manera horizontal y vertical. 
 
