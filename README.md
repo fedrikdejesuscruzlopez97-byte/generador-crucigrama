@@ -1,4 +1,4 @@
-# 1. Nombre de la aplicación
+## 1. Nombre de la aplicación
 ## Generador de Crucigramas Interactivos
 
 Esta aplicación web permite crear, generar, resolver y verificar crucigramas interactivos a partir de conceptos y pistas proporcionados por el usuario.
