@@ -26,7 +26,7 @@ Al finalizar, el crucigrama con el mayor puntaje es el que se presenta para pode
 
 ### 4. Almacenamiento del crucigrama
 
-Al exportarlo a HTML, la información del crucigrama se almacena en una constante llamada `G`, la cual contiene las filas, columnas, celdas y palabras.
+Al exportarlo a HTML, la información del crucigrama se almacena en una constante llamada G, la cual contiene las filas, columnas, celdas y palabras.
 
 Fragmento del código:
 
@@ -44,7 +44,7 @@ Dentro de palabras se almacena información como el número de la palabra, pista
 
 Al ingresar una respuesta, el sistema la convierte a mayúsculas y elimina determinados caracteres antes de colocarla dentro del crucigrama.
 
-Este proceso se encuentra en la función `aceptar()`:
+Este proceso se encuentra en la función aceptar():
 
 ```javascript
 let v=document.getElementById("respuesta").value.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^A-ZÑÜ]/g,"");
@@ -58,7 +58,7 @@ if(v.length!==G.palabras[actual].length){alert("La palabra debe tener "+G.palabr
 
 ### 6. Generación del valor hash
 
-Para realizar la verificación, el programa utiliza la función `hashWord()`, que recorre los caracteres de la palabra y genera un valor numérico.
+Para realizar la verificación, el programa utiliza la función hashWord(), que recorre los caracteres de la palabra y genera un valor numérico.
 
 Fragmento del código:
 
@@ -91,7 +91,7 @@ Los aciertos se irán sumando hasta que todas las respuestas sean correctas.
 
 Si la respuesta es incorrecta, las celdas correspondientes se muestran en rojo. Si la respuesta es correcta, se muestran en verde.
 
-El código utiliza las clases `correcta` e `incorrecta`:
+El código utiliza las clases correcta e incorrecta:
 
 ```javascript
 document.getElementById("c"+xx+"_"+yy).classList.add(ok?"correcta":"incorrecta");
