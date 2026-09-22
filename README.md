@@ -125,3 +125,76 @@ if(ac===G.palabras.length){
 ```
 
 De esta manera, cuando todas las respuestas son correctas, el usuario obtiene una calificación de **10/10** y recibe el mensaje de felicitación.
+
+## Diagrama de flujo del Generador de Crucigramas
+
+```mermaid
+flowchart TD
+
+    A([Inicio]) --> B[Ingresar conceptos y pistas]
+
+    B --> C[Limpiar el texto ingresado]
+    C --> D[Ordenar conceptos de mayor a menor número de letras]
+
+    D --> E[Colocar una palabra principal en el crucigrama]
+    E --> F[Comparar letras entre los conceptos]
+    F --> G[Buscar letras coincidentes]
+    G --> H[Colocar palabras horizontal y verticalmente]
+
+    H --> I[Generar 80 crucigramas candidatos]
+    I --> J[Asignar un puntaje a cada crucigrama]
+    J --> K[Comparar los puntajes]
+    K --> L[Seleccionar el crucigrama con mayor puntaje]
+
+    L --> M[Mostrar crucigrama generado]
+    M --> N[Exportar crucigrama a HTML]
+
+    N --> O[Guardar información en la constante G]
+    O --> P[Guardar filas, columnas y celdas]
+    P --> Q[Guardar palabras, pistas, posición, dirección, longitud y hash]
+
+    Q --> R[Usuario comienza a resolver el crucigrama]
+    R --> S[Ingresar una respuesta]
+
+    S --> T[Convertir respuesta a mayúsculas]
+    T --> U[Normalizar y eliminar caracteres no permitidos]
+
+    U --> V{¿La cantidad de letras es correcta?}
+
+    V -- No --> W[Mostrar mensaje: número de letras incorrecto]
+    W --> S
+
+    V -- Sí --> X[Colocar respuesta en el crucigrama]
+
+    X --> Y{¿Usuario presiona Verificar?}
+
+    Y -- No --> S
+    Y -- Sí --> Z[Obtener respuestas ingresadas]
+
+    Z --> AA[Generar hash de cada respuesta con hashWord]
+    AA --> AB[Comparar hash generado con hash almacenado]
+
+    AB --> AC{¿Los hash coinciden?}
+
+    AC -- No --> AD[Respuesta incorrecta]
+    AD --> AE[Marcar celdas en rojo]
+
+    AC -- Sí --> AF[Respuesta correcta]
+    AF --> AG[Marcar celdas en verde]
+    AG --> AH[Sumar acierto]
+
+    AE --> AI[Calcular calificación]
+    AH --> AI
+
+    AI --> AJ["Calificación = 10 × aciertos / total de palabras"]
+
+    AJ --> AK{¿Todas las respuestas son correctas?}
+
+    AK -- No --> AL[Mostrar calificación actual]
+    AL --> S
+
+    AK -- Sí --> AM[Mostrar mensaje de felicitación]
+    AM --> AN[Mostrar calificación 10 / 10]
+
+    AN --> AO([Fin])
+```
