@@ -1,8 +1,16 @@
-# Generador-crucigrama
+# Generador de Crucigramas Interactivos
 
-Este repositorio contiene una página web diseñada para crear y resolver crucigramas interactivos.
+Esta aplicación web permite crear, generar, resolver y verificar crucigramas interactivos a partir de conceptos y pistas proporcionados por el usuario.
 
-El proyecto fue desarrollado utilizando HTML, CSS y JavaScript e incorpora un algoritmo para organizar e intersectar las palabras dentro del tablero.
+## Requerimientos para la ejecución
+
+Para utilizar la aplicación, el usuario final debe contar con los siguientes requerimientos:
+
+**Dispositivo:** computadora de escritorio o portátil.
+**Sistema operativo:** Windows, Linux o macOS.
+**Navegador web:** Google Chrome, Microsoft Edge, Mozilla Firefox, Opera u otro navegador moderno compatible con HTML5, CSS3 y JavaScript.
+**JavaScript habilitado:** el navegador debe permitir la ejecución de JavaScript, ya que la generación y verificación de los crucigramas depende de este lenguaje.
+**Archivos de la aplicación:** el usuario debe contar con los archivos HTML, CSS y JavaScript correspondientes al sistema.
 
 ## Funcionamiento del algoritmo
 
