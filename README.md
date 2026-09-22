@@ -1,8 +1,9 @@
-# Generador de Crucigramas Interactivos
+# 1. Nombre de la aplicación
+## Generador de Crucigramas Interactivos
 
 Esta aplicación web permite crear, generar, resolver y verificar crucigramas interactivos a partir de conceptos y pistas proporcionados por el usuario.
 
-## Requerimientos para la ejecución
+## 2. Requerimientos para la ejecución
 
 Para utilizar la aplicación, el usuario final debe contar con los siguientes requerimientos:
 
@@ -16,7 +17,7 @@ Para utilizar la aplicación, el usuario final debe contar con los siguientes re
 
 **Archivos de la aplicación:** el usuario debe contar con los archivos HTML, CSS y JavaScript correspondientes al sistema.
 
-## Funcionamiento del algoritmo
+## 3. Funcionamiento del algoritmo
 
 #### El algoritmo funciona de la siguiente forma:
 
@@ -138,7 +139,7 @@ if(ac===G.palabras.length){
 
 De esta manera, cuando todas las respuestas son correctas, el usuario obtiene una calificación de **10/10** y recibe el mensaje de felicitación.
 
-## Diagrama de flujo del Generador de Crucigramas
+## 4. Diagrama de flujo del Generador de Crucigramas
 
 ```mermaid
 flowchart TD
