@@ -34,7 +34,7 @@ Fragmento del código:
 const G={"filas":11,"columnas":11,"celdas":["0,5","1,5","2,5","3,5","4,5","5,5","6,5","7,5","8,5","9,5","10,5"
 ```
 
-Dentro de `palabras` se almacena información como el número de la palabra, pista, posición en X y Y, dirección, longitud y valor hash:
+Dentro de palabras se almacena información como el número de la palabra, pista, posición en X y Y, dirección, longitud y valor hash:
 
 ```javascript
 {"numero":1,"pista":"hg","x":0,"y":5,"dir":"H","length":11,"hash":482}
