@@ -75,7 +75,7 @@ function hashWord(word){
 
 ### 7. Verificación de las respuestas
 
-Cuando el usuario presiona el botón para verificar el crucigrama, el sistema compara el valor generado por `hashWord()` con el hash almacenado en la palabra.
+Cuando el usuario presiona el botón para verificar el crucigrama, el sistema compara el valor generado por hashWord() con el hash almacenado en la palabra.
 
 Esta comparación aparece directamente en el código:
 
