@@ -4,7 +4,7 @@ Este repositorio contiene una página web diseñada para crear y resolver crucig
 El proyecto fue desarrollado utilizando HTML, CSS y JavaScript e incorpora un algoritmo para organizar e intersectar las palabras dentro del tablero.
 
 ## Funcionamiento del algoritmo
-El algoritmo funciona de la siguiente forma:
+### El algoritmo funciona de la siguiente forma:
 
 Primero, solicita los conceptos junto con las pistas y posteriormente se limpia el texto antes de mostrarlo en la página de manera que si el usuario escribe caracteres que HTML pueda interpretar como código se muestren solamente como texto.
 
